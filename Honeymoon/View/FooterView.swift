@@ -10,6 +10,8 @@ import SwiftUI
 struct FooterView: View {
   // MARK: - PROPERTIES
   
+  @Binding var showBookingAlert: Bool
+  
   // MARK: - BODY
     var body: some View {
       HStack {
@@ -19,7 +21,7 @@ struct FooterView: View {
         Spacer()
         
         Button {
-          print("Successs")
+          self.showBookingAlert.toggle()
         } label: {
           Text("Book Destination".uppercased())
             .font(.system(.subheadline, design: .rounded))
@@ -30,7 +32,6 @@ struct FooterView: View {
               Capsule().stroke(Color.pink, lineWidth: 2)
             )
         }
-
         
         Spacer()
         
@@ -44,8 +45,10 @@ struct FooterView: View {
 
   // MARK: - PREVIEW
 struct FooterView_Previews: PreviewProvider {
+  
+  @State static var showAlert: Bool = false
     static var previews: some View {
-        FooterView()
+      FooterView(showBookingAlert: $showAlert)
         .previewLayout(.fixed(width: 375, height: 80))
     }
 }
