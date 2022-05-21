@@ -10,6 +10,8 @@ import SwiftUI
 struct GuideView: View {
   // MARK: - PROPERTIES
   
+  @Environment(\.presentationMode) var presentationMode
+  
   // MARK: - BODY
     var body: some View {
       ScrollView {
@@ -20,9 +22,7 @@ struct GuideView: View {
           
           Text("Get started!")
             .fontWeight(.black)
-            .font(.largeTitle)
-            .foregroundStyle(Color.pink)
-          
+            .modifier(TitleModifier())
           Text("Discover and pick the perfect destination for your romantic Honeymoon!")
             .lineLimit(nil)
             .multilineTextAlignment(.center)
@@ -55,14 +55,10 @@ struct GuideView: View {
           Spacer(minLength: 10)
           
           Button {
-            print("A button was tapped")
+            self.presentationMode.wrappedValue.dismiss()
           } label: {
             Text("Continue".uppercased())
-              .font(.headline)
-              .padding()
-              .frame(minWidth: 0, maxWidth: .infinity)
-              .background(Capsule().fill(Color.pink))
-              .foregroundColor(Color.white)
+              .modifier(ButtonModifier())
           }
 
         } //: VSTACK
