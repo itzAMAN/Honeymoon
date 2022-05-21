@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		079C9BB5283947F200FD8820 /* SymbolModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079C9BB4283947F200FD8820 /* SymbolModifier.swift */; };
 		079C9BB828394C4500FD8820 /* CardTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079C9BB728394C4500FD8820 /* CardTransition.swift */; };
+		079C9BBB28394F0400FD8820 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079C9BBA28394F0400FD8820 /* PlaySound.swift */; };
+		079C9BBD283952BE00FD8820 /* sound-click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 079C9BBC283952BE00FD8820 /* sound-click.mp3 */; };
+		079C9BBF283952C700FD8820 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 079C9BBE283952C700FD8820 /* sound-rise.mp3 */; };
 		079DE93B2838F9A4007E0D82 /* HoneymoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079DE93A2838F9A4007E0D82 /* HoneymoonApp.swift */; };
 		079DE93D2838F9A4007E0D82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079DE93C2838F9A4007E0D82 /* ContentView.swift */; };
 		079DE93F2838F9A5007E0D82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 079DE93E2838F9A5007E0D82 /* Assets.xcassets */; };
 		079DE9422838F9A5007E0D82 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 079DE9412838F9A5007E0D82 /* Preview Assets.xcassets */; };
-		079DE9492838FA93007E0D82 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 079DE9482838FA93007E0D82 /* Sounds */; };
 		079DE94B2838FBBC007E0D82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079DE94A2838FBBC007E0D82 /* LaunchScreen.storyboard */; };
 		079DE94D2838FD35007E0D82 /* HoneymoonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079DE94C2838FD35007E0D82 /* HoneymoonModel.swift */; };
 		079DE9502838FD8D007E0D82 /* HoneymoonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079DE94F2838FD8D007E0D82 /* HoneymoonData.swift */; };
@@ -31,12 +33,14 @@
 /* Begin PBXFileReference section */
 		079C9BB4283947F200FD8820 /* SymbolModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolModifier.swift; sourceTree = "<group>"; };
 		079C9BB728394C4500FD8820 /* CardTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransition.swift; sourceTree = "<group>"; };
+		079C9BBA28394F0400FD8820 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		079C9BBC283952BE00FD8820 /* sound-click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-click.mp3"; sourceTree = "<group>"; };
+		079C9BBE283952C700FD8820 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
 		079DE9372838F9A4007E0D82 /* Honeymoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Honeymoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		079DE93A2838F9A4007E0D82 /* HoneymoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonApp.swift; sourceTree = "<group>"; };
 		079DE93C2838F9A4007E0D82 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		079DE93E2838F9A5007E0D82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		079DE9412838F9A5007E0D82 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		079DE9482838FA93007E0D82 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 		079DE94A2838FBBC007E0D82 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		079DE94C2838FD35007E0D82 /* HoneymoonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonModel.swift; sourceTree = "<group>"; };
 		079DE94F2838FD8D007E0D82 /* HoneymoonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonData.swift; sourceTree = "<group>"; };
@@ -70,6 +74,23 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		079C9BB928394EF600FD8820 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				079C9BBA28394F0400FD8820 /* PlaySound.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		079C9BC0283952CF00FD8820 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				079C9BBC283952BE00FD8820 /* sound-click.mp3 */,
+				079C9BBE283952C700FD8820 /* sound-rise.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		079DE92E2838F9A4007E0D82 = {
 			isa = PBXGroup;
 			children = (
@@ -89,17 +110,18 @@
 		079DE9392838F9A4007E0D82 /* Honeymoon */ = {
 			isa = PBXGroup;
 			children = (
-				079C9BB628394C3300FD8820 /* Extension */,
-				079DE95928390CEA007E0D82 /* Component */,
-				079DE9482838FA93007E0D82 /* Sounds */,
 				079DE94A2838FBBC007E0D82 /* LaunchScreen.storyboard */,
-				079DE9522838FDEA007E0D82 /* View */,
 				079DE93A2838F9A4007E0D82 /* HoneymoonApp.swift */,
 				079DE93E2838F9A5007E0D82 /* Assets.xcassets */,
+				079DE95928390CEA007E0D82 /* Component */,
 				079DE9512838FD91007E0D82 /* Data */,
+				079C9BB628394C3300FD8820 /* Extension */,
+				079C9BB928394EF600FD8820 /* Helper */,
 				079DE94E2838FD3E007E0D82 /* Model */,
-				079DE9402838F9A5007E0D82 /* Preview Content */,
 				079DE9642839253E007E0D82 /* Modifier */,
+				079DE9402838F9A5007E0D82 /* Preview Content */,
+				079C9BC0283952CF00FD8820 /* Sounds */,
+				079DE9522838FDEA007E0D82 /* View */,
 			);
 			path = Honeymoon;
 			sourceTree = "<group>";
@@ -218,8 +240,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				079DE9492838FA93007E0D82 /* Sounds in Resources */,
+				079C9BBF283952C700FD8820 /* sound-rise.mp3 in Resources */,
 				079DE94B2838FBBC007E0D82 /* LaunchScreen.storyboard in Resources */,
+				079C9BBD283952BE00FD8820 /* sound-click.mp3 in Resources */,
 				079DE9422838F9A5007E0D82 /* Preview Assets.xcassets in Resources */,
 				079DE93F2838F9A5007E0D82 /* Assets.xcassets in Resources */,
 			);
@@ -241,6 +264,7 @@
 				079DE968283927E1007E0D82 /* TitleModifier.swift in Sources */,
 				079DE94D2838FD35007E0D82 /* HoneymoonModel.swift in Sources */,
 				079DE9662839275E007E0D82 /* ButtonModifier.swift in Sources */,
+				079C9BBB28394F0400FD8820 /* PlaySound.swift in Sources */,
 				079DE95B28390D06007E0D82 /* HeaderComponent.swift in Sources */,
 				079DE93D2838F9A4007E0D82 /* ContentView.swift in Sources */,
 				079DE93B2838F9A4007E0D82 /* HoneymoonApp.swift in Sources */,
@@ -382,6 +406,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -412,6 +437,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
